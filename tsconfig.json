@@ -10,7 +10,10 @@
       "resolveJsonModule": true,
       "esModuleInterop": true,
       "allowSyntheticDefaultImports": true,
-      "baseUrl": "."
+      "baseUrl": ".",
+      "paths": {
+        "*":["./src/*"]
+      }
       },
       "ts-node": {
         "compilerOptions": {
