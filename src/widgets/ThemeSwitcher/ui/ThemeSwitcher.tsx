@@ -14,6 +14,6 @@ export const ThemeSwitcher: React.FC<IProps> = ({ className }) => {
     const { theme, toggleTheme } = useTheme()
 
     return (
-        <Button theme={ButtonTheme.CLEAR} className={classNames(cls.themeSwitcher, {}, [className])} onClick={toggleTheme}>{ theme === Theme.DARK ? <LightIcon width={20} height={20} /> : <DarkIcon width={20} height={20} color='#023480b7' />} </Button>
+        <Button theme={ButtonTheme.CLEAR} className={classNames(cls.themeSwitcher, {}, [className])} onClick={toggleTheme}>{theme === Theme.DARK ? <LightIcon width={20} height={20} /> : <DarkIcon width={20} height={20} color='#023480b7' />} </Button>
     );
 };
